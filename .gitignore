@@ -480,3 +480,8 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
+
+# Secrets - never commit these
+**/appsettings.json
+**/appsettings.Development.json
+docker-compose.yml
