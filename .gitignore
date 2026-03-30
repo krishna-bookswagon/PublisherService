@@ -488,3 +488,6 @@ docker-compose.yml
 
 # Environment variables
 .env
+
+# HTTP testing files (dev only)
+*.http
