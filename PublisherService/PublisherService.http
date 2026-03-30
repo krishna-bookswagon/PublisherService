@@ -1,0 +1,37 @@
+@PublisherService_HostAddress = https://localhost:7162
+
+### Get all publishers
+GET {{PublisherService_HostAddress}}/api/publishers
+Accept: application/json
+
+###
+
+### Create a publisher
+POST {{PublisherService_HostAddress}}/api/publishers
+Content-Type: application/json
+
+{
+  "name": "Simon & Schuster",
+  "country": "US",
+  "foundedYear": 1924
+}
+
+###
+
+### Update a publisher
+PUT {{PublisherService_HostAddress}}/api/publishers/6
+Content-Type: application/json
+
+{
+  "id": 6,
+  "name": "Hachette Livre",
+  "country": "FRANCE",
+  "foundedYear": 1826
+}
+
+###
+
+### Delete a publisher
+DELETE {{PublisherService_HostAddress}}/api/publishers/4
+
+###
