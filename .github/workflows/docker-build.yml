@@ -27,3 +27,7 @@ jobs:
 
     - name: Build Docker image
       run: docker build -t publisherservice ./PublisherService
+      env:
+        DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+        DB_USER: ${{ secrets.DB_USER }}
+        DB_NAME: ${{ secrets.DB_NAME }}

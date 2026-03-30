@@ -485,3 +485,6 @@ $RECYCLE.BIN/
 **/appsettings.json
 **/appsettings.Development.json
 docker-compose.yml
+
+# Environment variables
+.env
